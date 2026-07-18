@@ -1,0 +1,48 @@
+{
+  "name": "@shieldly/mcp",
+  "version": "1.0.1",
+  "mcpName": "io.github.shieldly-io/mcp",
+  "description": "AI-Powered Security Analysis for AWS — official MCP server",
+  "license": "MIT",
+  "homepage": "https://www.shieldly.io",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shieldly-io/mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/shieldly-io/mcp/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "type": "module",
+  "bin": {
+    "shieldly-mcp": "dist/server.cjs"
+  },
+  "files": [
+    "dist/server.cjs"
+  ],
+  "keywords": [
+    "aws",
+    "iam",
+    "security",
+    "cloudformation",
+    "ai",
+    "shieldly",
+    "mcp",
+    "model-context-protocol"
+  ],
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "scripts": {
+    "build": "node build.js",
+    "build:dev": "node build.js --dev",
+    "prepublishOnly": "npm run build"
+  },
+  "devDependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "esbuild": "^0.25.0",
+    "zod": "^3.24.0"
+  }
+}

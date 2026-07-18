@@ -1,0 +1,30 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.shieldly-io/mcp",
+  "description": "AI-Powered AWS security analysis: scan IAM policies and CloudFormation for risks and escalation.",
+  "repository": {
+    "url": "https://github.com/shieldly-io/mcp",
+    "source": "github"
+  },
+  "websiteUrl": "https://www.shieldly.io",
+  "version": "1.0.1",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@shieldly/mcp",
+      "version": "1.0.1",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "description": "Shieldly API key (optional — without it the server runs in rate-limited demo mode, no signup needed)",
+          "isRequired": false,
+          "format": "string",
+          "isSecret": true,
+          "name": "SHIELDLY_API_KEY"
+        }
+      ]
+    }
+  ]
+}
